@@ -1,0 +1,108 @@
+body {
+  text-align: center;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+/* Global elements */
+.hidden {
+  visibility: none;
+  display: none;
+}
+
+/* The timer */
+.timer {
+  font-size: 40px;
+  display: inline-block;
+  border: 5px solid #7b7b7b;
+  padding: 80px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0px 0px 30px white;
+}
+
+/* Inputs */
+.seperateInput {
+  text-align: center;
+  background-color: #212121;
+  color: white;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+  padding: 12px 0px;
+  width: 290px;
+}
+.seperateInput:focus-within {
+  border-color: #4a4a4a;
+  color: #4a4a4a;
+}
+input {
+  width: 60px;
+  border: none;
+  background-color: #212121;
+  font-size: 19px;
+  color: white;
+  margin-left: 10px;
+}
+input:focus {
+  outline: none;
+  border: none;
+  color: white;
+}
+.inputForm {
+  text-align: center;
+}
+.inputContainer {
+  margin-top: 20px;
+}
+
+/* Buttons */
+.actionButton {
+  background-color: #4a4a4a;
+  font-size: 22px;
+  border: none;
+  border-radius: 66%;
+  color: white;
+  padding: 13px 22px;
+  margin: 15px 10px;
+}
+.timerPausePlayBtn {
+  padding: 12px 25px;
+}
+.actionButtons {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+.inputPausePlayBtn {
+  padding: 17px 22px;
+}
+
+/* Heading and Status */
+.heading {
+  font-size: 30px;
+  background: linear-gradient(to right, #656565 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.statusLine {
+  margin-top: 30px;
+}
+
+/* Media queries */
+@media (max-width: 500px) {
+  input {
+    width: 40px;
+  }
+}
+@media (min-width: 500px) {
+  .seperateInput {
+    margin: 12px;
+  }
+}
