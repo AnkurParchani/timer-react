@@ -12,11 +12,14 @@
   },
   "name": "4ypv6u",
   "version": "0.0.0",
+  "homepage": "https://ankurparchani.github.io/timer-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",

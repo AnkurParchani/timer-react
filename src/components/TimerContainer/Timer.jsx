@@ -33,7 +33,7 @@ export default function Timer({ totalLaps, workTime, restTime }) {
           if (!audioRef.current.paused) {
             audioRef.current.pause();
           }
-          audioRef.current.src = "/media/beep-01a.mp3";
+          audioRef.current.src = "media/beep-01a.mp3";
           audioRef.current.play();
 
           clearInterval(timerRef.current);
@@ -52,14 +52,14 @@ export default function Timer({ totalLaps, workTime, restTime }) {
 
       case 2:
         if (laps % 2 === 0 && laps > 0 && audioRef.current.paused) {
-          audioRef.current.src = "/media/restAlarm.mp4";
+          audioRef.current.src = "media/restAlarm.mp4";
           audioRef.current.play();
         }
         break;
 
       case 3:
         if (laps % 2 === 1 && laps > -1 && audioRef.current.paused) {
-          audioRef.current.src = "/media/workAlarm.mp4";
+          audioRef.current.src = "media/workAlarm.mp4";
           audioRef.current.play();
         }
         break;
@@ -110,7 +110,7 @@ export default function Timer({ totalLaps, workTime, restTime }) {
           btnClass="actionButton"
         />
       </div>
-      <audio ref={audioRef} src="/media/beep-01a.mp3" />
+      <audio ref={audioRef} src="media/beep-01a.mp3" />
     </div>
   );
 }
